@@ -1,0 +1,109 @@
+**Bài 1: Kiểm tra số chẵn lẻ**\
+public class Main {
+    public static void main(String[] args) {
+        int n = 5;
+        if(n%2 == 0){
+            System.out.println("Even");
+        } else{
+            System.out.println("Odd");
+        }
+    }
+**Bài 2: So sánh hai số**\
+public class Bai2{
+    public static void main(String[] args) {
+        int a = 100;
+        int b = 40;
+        if(a>b){
+            System.out.println("a");
+        } else if(a<b){
+            System.out.println("b");
+        } else{
+            System.out.println("Equal");
+        }
+    }
+}
+**Bài 3: Điểm trung bình & xếp loại**\
+public class Bai3 {
+    public static void main(String[] args) {
+        int diem1 = 10;
+        int diem2 = 8;
+        int diem3 = 5;
+        int diemtb = (diem1+diem2+diem3)/3;
+        if(diemtb>=8.5){
+            System.out.println("avg=" + diemtb + "," + "Gioi");
+        } else if(diemtb>=6.5){
+            System.out.println("avg=" + diemtb + "," + "Kha");
+        } else if(diemtb>=5){
+            System.out.println("avg=" + diemtb + "," + "Trung binh");
+        } else{
+            System.out.println("avg=" + diemtb + "," + "Yeu");
+        }
+    }
+}
+**Bài 4: Năm nhuận**\
+public class Bai4 {
+    public static void main(String[] args) {
+        int year = 2025;
+        if(year%400==0){
+            System.out.println("Leap");
+        } else{
+            System.out.println("Common");
+        }
+    }
+}
+**Bài 5: Switch -- Tên ngày trong tuần**\
+public class Bai5 {
+    public static void main(String[] args) {
+        int day = 5;
+        switch (day) {
+            case 1:
+                System.out.println("Monday");
+                break;
+            case 2:
+                System.out.println("Tuesday");
+                break;
+            case 3:
+                System.out.println("Wednesday");
+                break;
+            case 4:
+                System.out.println("Thursday");
+                break;
+            case 5:
+                System.out.println("Friday");
+                break;
+            case 6:
+                System.out.println("Saturday");
+                break;
+            default:
+                System.out.println("Sunday");
+        }
+    }
+}
+**Bài 6: Switch -- Số ngày của tháng**\
+public class Bai6 {
+    public static void main(String[] args) {
+        int thang = 9;
+        switch (thang) {
+            case 1: case 3: case 5: case 7: case 8: case 10: case 12:
+                System.out.println(30);
+                break;
+            case 4: case 6: case 9: case 11:
+                System.out.println(31);
+                break;
+            case 2:
+                System.out.println(28);
+                break;
+            default:
+                break;
+        }
+    }
+}
+**Bài 7: For -- In 1..N**\
+public class Bai7 {
+    public static void main(String[] args) {
+        for(int x = 10; x>=1; x--){
+            System.out.print(x + " ");
+        }
+    }
+}
+**Bài 8: For -- Tổng 1..N**\
